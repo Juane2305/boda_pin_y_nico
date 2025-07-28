@@ -1,0 +1,31 @@
+import { Modal } from './Modal'
+import { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import MiIconoGift from './DatosBancariosIcon';
+
+
+const DatosBancarios = ({texto, claseContenedor, claseBoton, borderModal, textColor, textSize, cbu, alias, banco, nombre, claseBotonModal}) => {
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, 
+      easing: 'ease-in-out',
+      once: true,
+    });
+  }, []);
+
+  return (
+    <div className={`pt-20 flex flex-col justify-center items-center py-20 gap-y-5 overflow-hidden ${claseContenedor}`} >
+      <div data-aos= 'fade-up'>
+        <MiIconoGift/>
+      </div>
+        <div className={`flex flex-col items-center justify-center`}>
+          <p className={`text-center md:px-0 font-['Quicksand'] cursor-default w-sm md:w-lg px-3 ${textSize}`} data-aos= 'fade-up'>{texto}</p>
+          <Modal claseBoton={claseBoton} claseBotonModal={claseBotonModal} borderModal={borderModal} textColor={textColor} cbu={cbu} alias={alias} banco={banco} nombre={nombre}/>
+        </div>
+    </div>
+  )
+}
+
+export default DatosBancarios
