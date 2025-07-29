@@ -11,6 +11,8 @@ import { LuDessert } from "react-icons/lu";
 import { FaChampagneGlasses } from "react-icons/fa6";
 import { CiPizza } from "react-icons/ci";
 import { BsArrowThroughHeart } from "react-icons/bs";
+import { LiaBirthdayCakeSolid } from "react-icons/lia";
+
 
 const Itinerary = () => {
   return (
@@ -72,7 +74,7 @@ const Itinerary = () => {
           contentArrowStyle={{ borderRight: "7px solid  #5e836a" }}
           date="21:45hs"
           iconStyle={{ background: "#5e836a", color: "#fff" }}
-          icon={<PiDiscoBall />}
+          icon={<PiChampagneLight />}
         >
           <h3 className="vertical-timeline-element-title font-['Quicksand'] text-xl">
             Siga el baile siga el baileee
@@ -109,6 +111,17 @@ const Itinerary = () => {
         >
           <h3 className="vertical-timeline-element-title font-['Quicksand'] text-xl">
             Brindis y mesa dulce
+          </h3>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+          className="vertical-timeline-element--education"
+          contentArrowStyle={{ borderRight: "7px solid  #5e836a" }}
+          date="00:00hs"
+          iconStyle={{ background: "#5e836a", color: "#fff" }}
+          icon={<LiaBirthdayCakeSolid />}
+        >
+          <h3 className="vertical-timeline-element-title font-['Quicksand'] text-xl">
+            Cumple Pin
           </h3>
         </VerticalTimelineElement>
         <VerticalTimelineElement

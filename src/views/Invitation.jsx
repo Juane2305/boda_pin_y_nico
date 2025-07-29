@@ -59,7 +59,6 @@ const Invitation = () => {
           claseTexto="text-gray-900"
         />
 
-        <Itinerary/>
         <section className="mb-16">
           <GalleryPraga
             text="Nosotros"
@@ -67,30 +66,30 @@ const Invitation = () => {
             images={[
               {
                 index: 1,
-                img: "https://res.cloudinary.com/dfschbyq2/image/upload/v1753476614/4_1_m0am0y.jpg",
-              },
-              {
-                index: 2,
-                img: "https://res.cloudinary.com/dfschbyq2/image/upload/v1753476637/6_1_gxlyiu.jpg",
-              },
-              {
-                index: 3,
-                img: "https://res.cloudinary.com/dfschbyq2/image/upload/v1753476661/7_1_cjycsg.jpg",
-              },
-              {
-                index: 4,
                 img: "https://res.cloudinary.com/dfschbyq2/image/upload/v1753476550/1_1_yzn9yb.jpg",
               },
               {
-                index: 5,
+                index: 2,
                 img: "https://res.cloudinary.com/dfschbyq2/image/upload/v1753476571/2_2_1_irfnnj.jpg",
               },
               {
-                index: 6,
+                index: 3,
                 img: "https://res.cloudinary.com/dfschbyq2/image/upload/v1753476589/3ok_1_q3aapo.jpg",
               },
+              {
+                index: 4,
+                img: "https://res.cloudinary.com/dfschbyq2/image/upload/v1753476614/4_1_m0am0y.jpg",
+              },
+              {
+                index: 5,
+                img: "https://res.cloudinary.com/dfschbyq2/image/upload/v1753476637/6_1_gxlyiu.jpg",
+              },
+              {
+                index: 6,
+                img: "https://res.cloudinary.com/dfschbyq2/image/upload/v1753476661/7_1_cjycsg.jpg",
+              },
             ]}
-          />
+            />
         </section>
 
         <div className="bg-[#8fc09f] text-center text-white relative">
@@ -101,13 +100,13 @@ const Invitation = () => {
             salon="La Soñada Salon Eventos"
             imgClass="text-white"
             buttonClass="font-['Quicksand'] border border-green-700 bg-white py-3 px-6 text-gray-800 rounded-full hover:bg-gray-100 hover:text-gray-800 transform transition-transform duration-300 ease-in-out font-semibold"
-          />
+            />
         </div>
         <div className="relative">
           <DressCode dress_code="Formal" />
         </div>
         <DatosBancarios
-          texto="Tu mejor regalo es que nos acompañes en este día, pero... si eso no te alcanza, también podés colaborar con nuestro viajecito a Italia de forma presencial o mediante los siguientes datos bancarios"
+          texto="Tu mejor regalo es que nos acompañes en este día, peeero...si queres aportar con la causa, todas las gotas mojan 😂"
           claseContenedor="bg-[#8fc09f] text-white"
           claseBoton="font-['Quicksand'] border border-green-700 bg-white py-3 px-6 text-gray-800 rounded-full hover:bg-gray-100 hover:text-gray-800 transform transition-transform duration-300 ease-in-out font-semibold"
           textSize="text-lg"
@@ -118,12 +117,13 @@ const Invitation = () => {
           claseBotonModal="bg-[#8fc09f] border-[#8fc09f]"
           borderModal="border-[#8fc09f]"
           textColor="text-[#8fc09f]"
-        />
+          />
         <Asistencia
           clase="py-10 bg-fondo-banner"
           claseButton="border font-['Quicksand'] cursor-pointer py-3 px-6 rounded-full border-gray-800 font-semibold hover:border-gray-700 hover:bg-white hover:text-gray:800"
           linkAsistencia="https://docs.google.com/forms/d/e/1FAIpQLSdz8uE480IPINt0_OP2TTd2IfyX-PtTAGU1acQH4rsO1pXnjA/viewform?usp=header"
-        />
+          />
+        <Itinerary/>
         <TextoFinal textoFinal="¡Gracias por venir!" />
         <Footer />
       </div>
