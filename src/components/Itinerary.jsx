@@ -4,7 +4,7 @@ import {
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import { PiChampagneLight, PiDiscoBall } from "react-icons/pi";
-import { GiLinkedRings, GiHotMeal } from "react-icons/gi";
+import { GiLinkedRings, GiHotMeal,  } from "react-icons/gi";
 import arco from "../assets/arco-de-boda.png";
 import { ImHeart } from "react-icons/im";
 import { LuDessert } from "react-icons/lu";
@@ -12,6 +12,10 @@ import { FaChampagneGlasses } from "react-icons/fa6";
 import { CiPizza } from "react-icons/ci";
 import { BsArrowThroughHeart } from "react-icons/bs";
 import { LiaBirthdayCakeSolid } from "react-icons/lia";
+import { FaGlassMartiniAlt } from "react-icons/fa";
+import { LuPartyPopper } from "react-icons/lu";
+
+
 
 
 const Itinerary = () => {
@@ -35,13 +39,24 @@ const Itinerary = () => {
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
           contentArrowStyle={{ borderRight: "7px solid #5e836a" }}
-          date="18:30hs"
+          date="18:00hs"
           iconStyle={{ background: "#5e836a", color: "#fff" }}
           icon={
             <div className="flex justify-center items-center pt-2 lg:pt-5">
               <img src={arco} alt="Arco de boda" className="w-6 h-6" />
             </div>
           }
+        >
+          <h3 className="vertical-timeline-element-title font-['Quicksand'] text-xl">
+            Ceremonia
+          </h3>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+          className="vertical-timeline-element--work"
+          contentArrowStyle={{ borderRight: "7px solid #5e836a" }}
+          date="18:30hs"
+          iconStyle={{ background: "#5e836a", color: "#fff" }}
+          icon={<FaGlassMartiniAlt/>}
         >
           <h3 className="vertical-timeline-element-title font-['Quicksand'] text-xl">
             Recepción
@@ -129,7 +144,7 @@ const Itinerary = () => {
           contentArrowStyle={{ borderRight: "7px solid  #5e836a" }}
           date="00:30hs"
           iconStyle={{ background: "#5e836a", color: "#fff" }}
-          icon={<PiDiscoBall />}
+          icon={<LuPartyPopper />}
         >
           <h3 className="vertical-timeline-element-title font-['Quicksand'] text-xl">
             La vida es un CARNAVAL
